@@ -292,7 +292,7 @@ VideoPlayer:
   m_GameObject: {fileID: 212114807}
   m_Enabled: 1
   m_VideoClip: {fileID: 32900000, guid: e463c86ca8327d04f874bd1cf1abbdb3, type: 3}
-  m_TargetCameraAlpha: 1
+  m_TargetCameraAlpha: 0.436
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1473732430}
   m_TargetTexture: {fileID: 0}
@@ -901,8 +901,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.4800172, y: -77.40001}
-  m_SizeDelta: {x: 252.37158, y: 23.29583}
+  m_AnchoredPosition: {x: 12.08, y: -77.38}
+  m_SizeDelta: {x: 270.24683, y: 25.84047}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1136733525
 MonoBehaviour:
@@ -989,8 +989,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 415, y: -207}
-  m_SizeDelta: {x: 267.27563, y: 24.671593}
+  m_AnchoredPosition: {x: 417.5, y: -206.77}
+  m_SizeDelta: {x: 272.2677, y: 25.1324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1332050965
 MonoBehaviour:
@@ -1156,8 +1156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 372, y: 122}
-  m_SizeDelta: {x: 267.27563, y: 24.671593}
+  m_AnchoredPosition: {x: 373.69, y: 122.16}
+  m_SizeDelta: {x: 270.6631, y: 24.98428}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1421899027
 CanvasGroup:
@@ -1359,7 +1359,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1964,8 +1964,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 358, y: -75.612}
-  m_SizeDelta: {x: 267.27563, y: 24.671593}
+  m_AnchoredPosition: {x: 361.5, y: -75.3}
+  m_SizeDelta: {x: 274.31384, y: 25.321274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &2116129171
 CanvasGroup:
