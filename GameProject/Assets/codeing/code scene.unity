@@ -155,8 +155,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.1701, y: -218.1}
-  m_SizeDelta: {x: 335.05493, y: 62.638}
+  m_AnchoredPosition: {x: 27.081, y: -221.38}
+  m_SizeDelta: {x: 300.24786, y: 56.130875}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9110701
 MonoBehaviour:
@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GOOD JOB!
+  m_Text: HACKED!
 --- !u!222 &9110702
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1376,7 +1376,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 12.986441
+  orthographic size: 102.99569
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
