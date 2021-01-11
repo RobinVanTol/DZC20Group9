@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/main/Scenes/tile_map_implementation.unity
+    guid: e1197232a85cae64da5e46d59cd1f697
+  - enabled: 1
+    path: Assets/hacker slap/hackerslap.unity
+    guid: 9481fc1670194964fbf0239d3a2a0d09
+  - enabled: 1
+    path: Assets/CodeBlocks/DragAndDrop/code scene.unity
+    guid: 8600f0d934a3df745bc83cbcaa9e3217
   m_configObjects: {}

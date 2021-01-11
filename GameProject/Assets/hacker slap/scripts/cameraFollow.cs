@@ -8,6 +8,10 @@ public class cameraFollow : MonoBehaviour
     public Vector3 offset;
     public float smoothing = 0.25f;
     // Update is called once per frame
+    void Start()
+    {
+        transform.position = target.position + offset;
+    }
     void FixedUpdate()
     {
         Vector3 desiredpos = target.position + offset;
