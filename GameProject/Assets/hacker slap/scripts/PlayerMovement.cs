@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+public float scale;
     float moveSpeed = 5f;
     Vector2 movement;
     public Animator animator;
@@ -20,11 +20,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", movement.sqrMagnitude);
         if (movement.x == -1 && movement.y == 0)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.localScale = new Vector3(-scale, scale, 1);
         }
         else
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(scale, scale, 1);
         }
     }
 
