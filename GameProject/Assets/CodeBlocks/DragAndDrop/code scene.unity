@@ -1684,10 +1684,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The door is Locked! You have to hack the key of the door! The key is an
-    integer between 0 and 1000000. The method checkKey() returns "true" if the parsed
-    integer is the correct key. Finish the hacking program, and set the correct key
-    to variable "c" in order to unlock the door!
+  m_Text: The server is Locked! You have to hack the key of the server! The key is
+    an integer between 0 and 1000000. The method checkKey() returns "true" if the
+    parsed integer is the correct key. Finish the hacking program, and set the correct
+    key to variable "c" in order to unlock the server!
 --- !u!222 &1725327757
 CanvasRenderer:
   m_ObjectHideFlags: 0
