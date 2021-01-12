@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CongratsPop : MonoBehaviour
 {
@@ -61,6 +62,8 @@ public class CongratsPop : MonoBehaviour
                 Btext.SetActive(false);
                 Gtext.SetActive(true);
                 //Debug.Log("Completed");
+                StartCoroutine(Timer(4));
+
             }
             else Btext.SetActive(true);
         }
@@ -72,4 +75,13 @@ public class CongratsPop : MonoBehaviour
 
 
     }
+
+    IEnumerator Timer(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // Code to execute after the delay
+        SceneManager.LoadScene(sceneName: "tile_map_implementation");
+    }
+
 }
