@@ -12,6 +12,7 @@ public class completion : MonoBehaviour
     public Text text_time;
     public GameObject gtext_time;
     public GameObject victory_time;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +31,6 @@ public class completion : MonoBehaviour
         }
         if (time < -3)
         {
-            
         SceneManager.LoadScene (sceneName:"tile_map_implementation");
         }
     }
