@@ -13,6 +13,7 @@ public class completion : MonoBehaviour
     public GameObject gtext_time;
     public GameObject victory_time;
     public GameObject player;
+    public GameObject badtext;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class completion : MonoBehaviour
     {
         float time = win_time - (float)((System.DateTime.Now - start_time).Seconds);
         text_time.text = time.ToString();
-        if (time < 0 && gtext_time.activeSelf)
+        if (time < 0 && gtext_time.activeSelf && !badtext.activeSelf)
         {
             Time.timeScale = 0;
             victory_time.SetActive(true);

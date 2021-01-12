@@ -10,12 +10,13 @@ public class sceneswitcher : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetFloat("X") != 0)
+        if (PlayerPrefs.GetFloat("X") != 0 && PlayerPrefs.GetFloat("C") == 1)
         {
             player.transform.position = new Vector3(PlayerPrefs.GetFloat("X")+2, PlayerPrefs.GetFloat("Y"), PlayerPrefs.GetFloat("Z"));
             Debug.Log(PlayerPrefs.GetFloat("X")+2);
         }
     }
+
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D col)
@@ -23,7 +24,13 @@ public class sceneswitcher : MonoBehaviour
         PlayerPrefs.SetFloat("X", player.transform.position.x);
         PlayerPrefs.SetFloat("Y", player.transform.position.y);
         PlayerPrefs.SetFloat("Z", player.transform.position.z);
+        PlayerPrefs.SetFloat("C", 1);
         SceneManager.LoadScene (sceneName:scene_name);
         gameObject.SetActive(false);
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.SetFloat("C", 0);
     }
 }
