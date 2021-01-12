@@ -26,12 +26,13 @@ public class completion : MonoBehaviour
         text_time.text = time.ToString();
         if (time < 0 && gtext_time.activeSelf)
         {
+            Time.timeScale = 0;
             victory_time.SetActive(true);
             gtext_time.SetActive(false);
         }
         if (time < -3)
         {
-        SceneManager.LoadScene (sceneName:"tile_map_implementation");
+            SceneManager.LoadScene (sceneName:"tile_map_implementation");
         }
     }
 }
