@@ -33,6 +33,7 @@ public class completion : MonoBehaviour
         }
         if (time < -3)
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene (sceneName:"tile_map_implementation");
         }
     }
