@@ -19,14 +19,15 @@ public class CongratsPop : MonoBehaviour
     public RectTransform BB1;
     public RectTransform BB2;
     public RectTransform BB3;
-
-
+    public AudioSource failMusic;
+    public AudioSource backgroundMusic;
     // Start is called before the first frame update
     void Start()
     {
         //text = GameObject.Find("GoodJob").GetComponent<RectTransform>().gameObject;
         Gtext.SetActive(false);
         Btext.SetActive(false);
+        backgroundMusic.Play();
     }
 
     // Update is called once per frame
@@ -61,16 +62,24 @@ public class CongratsPop : MonoBehaviour
             {
                 Btext.SetActive(false);
                 Gtext.SetActive(true);
+                backgroundMusic.Stop();
                 //Debug.Log("Completed");
                 StartCoroutine(Timer(4));
 
             }
-            else Btext.SetActive(true);
+            else
+            {
+                failMusic.Play();
+                Btext.SetActive(true);
+                
+            }
+
         }
         else
         {
             Gtext.SetActive(false);
             Btext.SetActive(false);
+           
         }
 
 
@@ -79,7 +88,7 @@ public class CongratsPop : MonoBehaviour
     IEnumerator Timer(float time)
     {
         yield return new WaitForSeconds(time);
-
+        failMusic.Stop();
         // Code to execute after the delay
         SceneManager.LoadScene(sceneName: "tile_map_implementation");
     }
