@@ -5,6 +5,7 @@ using UnityEngine;
 public class coin : MonoBehaviour
 {
     public string coin_string;
+    public AudioSource audioSource;
     void Start()
     {
         if (PlayerPrefs.GetFloat(coin_string) == 0 && PlayerPrefs.GetFloat("C") == 1)
@@ -19,6 +20,7 @@ public class coin : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         PlayerPrefs.SetFloat(coin_string, 0);
+        audioSource.Play();
         gameObject.SetActive(false);
     }
 }
