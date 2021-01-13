@@ -7,6 +7,7 @@ public class sceneswitcher : MonoBehaviour
 {
     public GameObject player;
     public string scene_name;
+    public float win_time;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,10 @@ public class sceneswitcher : MonoBehaviour
         PlayerPrefs.SetFloat("X", player.transform.position.x);
         PlayerPrefs.SetFloat("Y", player.transform.position.y);
         PlayerPrefs.SetFloat("Z", player.transform.position.z);
+        if (scene_name == "hackerslap")
+        {
+            PlayerPrefs.SetFloat("WinTime", win_time);
+        }
         PlayerPrefs.SetFloat("C", 1);
         SceneManager.LoadScene (sceneName:scene_name);
         gameObject.SetActive(false);

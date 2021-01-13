@@ -20,6 +20,7 @@ public class completion : MonoBehaviour
     void Start()
     {
         start_time = System.DateTime.Now;
+        win_time = PlayerPrefs.GetFloat("WinTime");
     }
 
     // Update is called once per frame
