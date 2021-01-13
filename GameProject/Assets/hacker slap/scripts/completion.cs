@@ -14,6 +14,8 @@ public class completion : MonoBehaviour
     public GameObject victory_time;
     public GameObject player;
     public GameObject badtext;
+    public AudioSource backgroundMusic;
+    public AudioSource victoryMusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,8 @@ public class completion : MonoBehaviour
             Time.timeScale = 0;
             victory_time.SetActive(true);
             gtext_time.SetActive(false);
+            victoryMusic.Play();
+            backgroundMusic.Stop();
         }
         if (time < -3)
         {

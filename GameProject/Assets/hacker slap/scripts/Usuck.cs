@@ -11,6 +11,8 @@ public class Usuck : MonoBehaviour
     public GameObject hacker3;
     public GameObject hacker4;
     public GameObject uSuck;
+    //public AudioSource failMusic;
+    public AudioSource backgroundMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +26,12 @@ public class Usuck : MonoBehaviour
         bool ofc = hacker1.transform.position.y > -9.8 && hacker2.transform.position.y > -9.8 && hacker3.transform.position.y > -9.8 && hacker4.transform.position.y > -9.8;
         if (!ofc)
         {
+            //failMusic.Play();
             Time.timeScale = 0;
             uSuck.SetActive(true);
+            backgroundMusic.Stop();
             StartCoroutine(WaitForRealSeconds(4));
+
 
         }
         //Debug.Log(player.transform.position.y);
